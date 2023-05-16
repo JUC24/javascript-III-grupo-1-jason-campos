@@ -1,0 +1,57 @@
+.imgContainer{
+  width: 25rem;
+  height: 25rem;
+  margin: 2rem auto 0 auto;
+}
+
+.img{
+  width: 100%;
+  height: 100%;
+}
+
+.textConatiner{
+  background-color: darkgrey;
+  padding: 3rem;
+  width: 35rem;
+  margin: 2rem auto 0 auto;
+  border-radius: 0.5rem;
+}
+
+#joke{
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+#btn{
+  display: block;
+  padding: 0.5rem;
+  width: 12rem;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+}
+
+#search-button{
+  padding: 0.5rem;
+  width: 5rem;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+}
+
+#search-input{
+  width: 80%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+
+
+
+
+
+.textContainer{
+  background-color: #ffffff;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}

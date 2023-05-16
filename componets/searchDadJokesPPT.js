@@ -24,14 +24,16 @@ function searchJokes(){
   
       if (data.results.length) {
         data.results.forEach((joke) => {
-          const li = document.createElement('li');
-          li.textContent = joke.joke;
-          jokesList.appendChild(li);
+          const p = document.createElement('p');
+          p.setAttribute("class", "textContainer")
+          p.textContent = joke.joke;
+          jokesList.appendChild(p);
         });
       } else {
-        const li = document.createElement('li');
-        li.textContent = 'No jokes found';
-        jokesList.appendChild(li);
+        const p = document.createElement('p');
+        p.setAttribute("class", "textContainer")
+        p.textContent = 'No jokes found';
+        jokesList.appendChild(p);
       }
     } catch (error) {
       console.error(error);
