@@ -1,16 +1,16 @@
-async function getJoke(){
-  document.getElementById('btn').addEventListener('click', getJoke);
-  const config = {
-    headers: {
-      Accept: 'application/json',
-    },
-  };
+import { getRandomRequest } from "./randomRequest.js";
 
-  const fetchData = await fetch('https://icanhazdadjoke.com/', config);
-  const jsonData = await fetchData.json();
-  document.getElementById('joke').innerHTML = jsonData.joke
+getRandomRequest();
+
+function renderJoke(joke) {
+  document.getElementById('joke').innerHTML = joke;
 }
 
-getJoke();
+function getJoke() {
+  document.getElementById('btn').addEventListener('click', async () => {
+    const joke = await getRandomRequest();
+    renderJoke(joke);
+  });
+}
 
-export{getJoke}
+export{getRandomRequest,renderJoke, getJoke}

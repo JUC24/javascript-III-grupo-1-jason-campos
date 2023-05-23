@@ -1,4 +1,9 @@
-function searchJokes(){
+import { searchRandomJokes } from "./searchRandomRequest.js";
+
+searchRandomJokes ();
+
+function generateJoke (){
+  
   const form = document.querySelector('#search-form');
   const input = document.querySelector('#search-input');
   const jokesList = document.querySelector('#jokes-list');
@@ -12,26 +17,20 @@ function searchJokes(){
     }
   
     try {
-      const response = await fetch(`https://icanhazdadjoke.com/search?term=${searchTerm}`, {
-        headers: {
-          Accept: 'application/json'
-        }
-      });
-  
-      const data = await response.json();
+      const jokes = await searchRandomJokes(searchTerm);
   
       jokesList.innerHTML = '';
   
-      if (data.results.length) {
-        data.results.forEach((joke) => {
+      if (jokes.length) {
+        jokes.forEach((joke) => {
           const p = document.createElement('p');
-          p.setAttribute("class", "textContainer")
+          p.setAttribute('class', 'textContainer');
           p.textContent = joke.joke;
           jokesList.appendChild(p);
         });
       } else {
         const p = document.createElement('p');
-        p.setAttribute("class", "textContainer")
+        p.setAttribute('class', 'textContainer');
         p.textContent = 'No jokes found';
         jokesList.appendChild(p);
       }
@@ -41,6 +40,4 @@ function searchJokes(){
   });
 }
 
-searchJokes()
-
-export{searchJokes}
+export {searchRandomJokes, generateJoke}
