@@ -18,7 +18,7 @@ function renderProducts() {
     btn.setAttribute('class','product_btn');
     btn.dataset.productid = prod;
     btn.addEventListener('click', ProductChangeManage );
-    btn.innerHTML = `<img class="productImg" src="img/white-${prod}.jpg" alt="">`;
+    btn.innerHTML = `<img id="productImg" class="productImg" src="img/white-${prod}.jpg" alt="">`;
     if (op) {
       op.appendChild(btn);
     }

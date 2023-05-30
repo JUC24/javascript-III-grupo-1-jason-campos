@@ -11,8 +11,6 @@ function generateJoke() {
     const form = document.querySelector('#search-form');
   
     if (form) {
-      form.addEventListener('submit', async (event) => {
-        event.preventDefault();
         form.addEventListener('submit', async (event) => {
           event.preventDefault();
       
@@ -46,7 +44,7 @@ function generateJoke() {
             console.error(error);
           }
         });
-      });
+
     }
   });
 
