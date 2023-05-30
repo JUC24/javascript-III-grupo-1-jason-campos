@@ -3,4 +3,5 @@ import cart from "./cart.js"
 
 
 
-const cart = new Cart()
+const cart = new Cart();
+

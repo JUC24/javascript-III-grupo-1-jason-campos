@@ -3,7 +3,6 @@ class Cart {
     this.products = [];
   }
 
-  // Método para agregar un producto al carrito
   addProductToCart(product) {
     this.products.push(product);
     this.updateLocalStorage();
