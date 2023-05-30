@@ -4,26 +4,38 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/style/styles.css">
+  <link rel="stylesheet" href="style/styles.css">
   <title>Document</title>
 </head>
 <body>
 
   <main>
     <!--visualizacion del producto-->
-    <section id="visualProductContainer">
-
-      <div id="joke-container"></div>
-      <div id="joke-container"></div>
-      
+    <section class="visualProductContainer" id="visualProductContainer">
+    
       <div><!--div_contenedor de img y colores-->
-        <div>img</div>
-        <div>colores</div>
+        <div>
+          <p id="joke-container"></p>
+          <div class="defaultimgCont" id="default-img"><img class="default_img" src="img/black-shirt.jpg" alt=""></div>
+        </div>
+
+        <div>
+          <div>
+            <input id="black" type="radio" name="color">
+            <label for="black">Black</label>
+          </div>
+          <div>
+            <input id="white" type="radio" name="color">
+            <label for="white">white</label>
+          </div>
+        </div>
       </div>
 
       <div><!--div_contenedor de titulo, precio y generador de chistes-->
-        <h2>productp</h2>
-        <span>precio</span>
+        <h1 id="title">productp</h1>
+        <p id="price">precio</p>
+        <p id="chosedJoke"></p>
+
         <div class="textConatiner">
           <p id="joke"></p>
           <button id="btn">GEt Another Joke !</button>
@@ -32,11 +44,8 @@
     </section>
     <!--visualizacion de otros productos-->
     <section>
-      <div><!--div_contenedor de productos-->
-        <img src="../img/white-case.jpg" alt="">
-        <img src="../img/white-pillow.jpg" alt="">
-        <img src="../img/white-poster.jpg" alt="">
-      </div>
+      <h1>Chose another product</h1>
+      <div id="productsContainer" class="productsContainer"><!--div_contenedor de productos--> </div>
     </section>
   </main>
   

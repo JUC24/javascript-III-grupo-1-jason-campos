@@ -50,3 +50,31 @@
   padding: 1rem;
   border-radius: 0.5rem;
 }
+
+.visualProductContainer{
+  display: flex;
+  align-items: center;
+}
+
+.default_img{
+  width: 100%;
+}
+
+.defaultimgCont{
+  width: 70%;
+}
+
+.productImg{
+  width: 100%;
+}
+
+.product_btn{
+  width: 25%;
+}
+
+.productsContainer{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+

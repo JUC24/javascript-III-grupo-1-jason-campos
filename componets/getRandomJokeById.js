@@ -5,7 +5,7 @@ async function getRandomRequestById() {
     },
   };
 
-  const response = await fetch('https://icanhazdadjoke.com/j/<joke_id>', config);
+  const response = await fetch('https://icanhazdadjoke.com/j/joke_id>', config);
   const data = await response.json();
   return data.joke;
 }
