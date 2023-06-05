@@ -1,0 +1,105 @@
+/*..................................Home..............................*/
+.imgContainer{
+  width: 25rem;
+  height: 25rem;
+  margin: 2rem auto 0 auto;
+}
+
+.img{
+  width: 100%;
+  height: 100%;
+}
+
+.randomJokeBox{
+  background-color: darkgrey;
+  padding: 3rem;
+  width: 35rem;
+  margin: 2rem auto 0 auto;
+  border-radius: 0.5rem;
+}
+
+.jokeBox{
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.randomJokeBox--generateBtn{
+  display: block;
+  padding: 0.5rem;
+  width: 12rem;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+}
+
+.randomJokeBox--searchButton{
+  padding: 0.5rem;
+  width: 5rem;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+}
+
+.randomJokeBox--searchInput{
+  width: 80%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+/*.......................Ecommerce................................*/
+
+.visualProductContainer{
+  display: flex;
+  align-items: center;
+}
+
+.imgJokeBox{
+  position: relative;
+}
+
+.default_img{
+  width: 70%;
+  margin: 2% 10%;
+}
+
+.joke-container{
+  position: absolute;
+  width: 18%;
+  left: 10.1rem;
+  top: 8rem;
+}
+
+.setUpColor{
+  display: flex;
+  width: 30%;
+  justify-content: space-evenly;
+  margin:.5rem 0rem 2rem 10rem;
+}
+
+.colorOption{
+  font-size: x-large;
+  font-weight: bold;
+}
+
+input[type=radio] {
+  width: 50px;
+  height: 25px;
+}
+
+.productImg{
+  width: 100%;
+}
+
+.product_btn{
+  width: 25%;
+}
+
+.productsContainer{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.img-product-black{
+  color: #fff;
+}
+
+

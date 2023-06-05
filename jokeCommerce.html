@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styles.css">
+    <title>JOKES</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <button id="OpenCartButton">CART</button>
+      </div>
+    </header>
+    <main>
+      <!--visualizacion del producto-->
+      <section id="visualProductContainer" class="visualProductContainer">
+        <div id="imgColorBox"><!--div_contenedor de img y colores-->
+          <div class="imgJokeBox" id="imgJokeBox">
+            <p class="joke-container" id="joke-container"></p>
+            <img id="default_img" class="default_img" src="img/white-shirt.jpg" alt="">
+          </div>
+
+          <div class="setUpColor">
+            <div>
+              <label class="colorOption" for="black">Black
+                <input class="colorOP"  data-id="black" type="radio" name="color">
+              </label>
+            </div>
+            <div>
+              <label class="colorOption" for="white">white
+                <input class="colorOP" data-id="white" type="radio" name="color">
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div><!--div_contenedor de titulo, precio y generador de chistes-->
+          <h1 id="title"></h1>
+          <p id="price"></p>
+          <button id="add-to-cart-button">ADD TO CART</button>
+          <p>JOKE:</p>
+          <p id="chosedJoke"></p>
+
+          <div id="randomJokeBox" class="randomJokeBox">
+            <p id="jokeBox" class="jokeBox"></p>
+            <button id="generateBtn" class="randomJokeBox--generateBtn">GET ANOTHER JOKE</button>
+          </div>
+        </div>
+      </section>
+      <!--visualizacion de otros productos-->
+      <section>
+        <h2>Chose another product</h2>
+        <div id="productsContainer" class="productsContainer"><!--div_contenedor de productos--> </div>
+      </section>
+    </main>
+  </body>
+  <script type="module" src="/acces-points/ecommerce.js"></script>
+</html>

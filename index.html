@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/styles.css">
+    <title>JOKES</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <button id="OpenCartButton">CART</button>
+      </div>
+    </header>
+    <main>
+      <div class="imgContainer"><img class="img" src="/img/dadImg.jpg" alt=""></div>
+  
+      <div id="randomJokeBox" class="randomJokeBox">
+        <p id="jokeBox" class="jokeBox"></p>
+        <button id="generateBtn" class="randomJokeBox--generateBtn">GET ANOTHER JOKE</button>
+      </div>
+  
+      <div class="randomJokeBox">
+        <form id="search-form">
+          <input type="text" id="search-input" class="randomJokeBox--searchInput" placeholder="Type a word" required>
+          <button type="submit" id="search-button" class="randomJokeBox--searchButton">Search</button>
+        </form>
+        <div id="jokes-list"></div></div>
+    </main>
+  </body>
+  <script type="module" src="/acces-points/home.js"></script>
+</html>
