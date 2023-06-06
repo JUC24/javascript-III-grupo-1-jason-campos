@@ -1,4 +1,4 @@
-import {datas} from "../config/data.js";
+import {datas, state} from "../config/data.js";
 import Publisher from "../config/publisher.js";
 
 const op = document.getElementById('productsContainer')
@@ -11,9 +11,9 @@ function ProductChangeManage (event){
 }
 
 function renderProducts() {
-  let html = '';
   const products = Object.keys(datas);
-  products.forEach((prod)=> {
+  const filterProducts = products.filter((product) => product !== state.product)
+  filterProducts.forEach((prod)=> {
     const btn = document.createElement('button');
     btn.setAttribute('class','product_btn');
     btn.dataset.productid = prod;

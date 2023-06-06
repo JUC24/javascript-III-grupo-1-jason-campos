@@ -19,18 +19,18 @@
         <div id="imgColorBox"><!--div_contenedor de img y colores-->
           <div class="imgJokeBox" id="imgJokeBox">
             <p class="joke-container" id="joke-container"></p>
-            <img id="default_img" class="default_img" src="img/white-shirt.jpg" alt="">
+            <img id="default_img" class="default_img" src="" alt="">
           </div>
 
           <div class="setUpColor">
             <div>
               <label class="colorOption" for="black">Black
-                <input class="colorOP"  data-id="black" type="radio" name="color">
+                <input class="colorOP"  data-id="black" type="radio" name="color" value="black">
               </label>
             </div>
             <div>
               <label class="colorOption" for="white">white
-                <input class="colorOP" data-id="white" type="radio" name="color">
+                <input class="colorOP" data-id="white" type="radio" name="color" value="white">
               </label>
             </div>
           </div>
@@ -54,6 +54,17 @@
         <h2>Chose another product</h2>
         <div id="productsContainer" class="productsContainer"><!--div_contenedor de productos--> </div>
       </section>
+
+      <section>
+        <div id="cartContainer">
+          <div>
+            <button id="closeBtn">Close</button>
+            <button id="removeAllBtn">Remove All</button>
+          </div>
+          <div id="cartProductsContainer"></div>
+        </div>
+      </section>
+
     </main>
   </body>
   <script type="module" src="/acces-points/ecommerce.js"></script>

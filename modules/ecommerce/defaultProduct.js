@@ -18,9 +18,13 @@ function upDateColor(color){
   state.color = color;
 }
 
+function defaultImage(){
+  img.setAttribute('src',`img/${state.color}-${state.product}.jpg`);
+}
+
 function setUpchanges(){
   setUpproductChange.subscribe(upDateImage);
   colorChange.subscribe(upDateColor)
 }
 
-export {setUpchanges}
+export {setUpchanges, defaultImage}

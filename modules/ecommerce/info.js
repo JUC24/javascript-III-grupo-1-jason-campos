@@ -5,6 +5,11 @@ import {colorChange} from "./changeColor.js"
 const title = document.getElementById('title')
 const price = document.getElementById('price')
 
+function defaultInfo(Product){
+  title.innerHTML = `${state.color} ${state.product}`;
+  price.innerHTML = `${datas[Product][state.color]}`;
+}
+
 function titleChange(product){
   title.innerHTML = `${state.color} ${product}`;
   price.innerHTML = `${datas[product][state.color]}`;
@@ -22,4 +27,4 @@ function setUpinfo(){
   colorChange.subscribe(colorschanges)
 }
 
-export {setUpinfo};
+export {setUpinfo, defaultInfo};
