@@ -4,7 +4,6 @@ function formatDate(dateString) {
   return date.toLocaleDateString('en-US', options);
 }
 
-
 function formatLocation(location) {
   if (location && location.city && location.state && location.address) {
     return `${location.city} • ${location.state}, ${location.address}`;

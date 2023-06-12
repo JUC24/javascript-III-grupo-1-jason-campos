@@ -1,6 +1,6 @@
 import {formatDate, formatLocation, formatPrice} from "./format.js"
 
-function createEventCard(event) {
+function createTemplateCard(event) {
   const eventCard = document.createElement('div');
   eventCard.className = 'cart';
 
@@ -40,12 +40,12 @@ function createEventCard(event) {
 }
 
 function renderEvents(events) {
-  const eventGrid = document.getElementById('eventContainer');
-  eventGrid.innerHTML = '';
+  const eventTemplate = document.getElementById('eventContainer');
+  eventTemplate.innerHTML = '';
 
   events.forEach(event => {
-    const eventCard = createEventCard(event);
-    eventGrid.appendChild(eventCard);
+    const eventCard = createTemplateCard(event);
+    eventTemplate.appendChild(eventCard);
   });
 }
 
