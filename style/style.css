@@ -1,0 +1,183 @@
+header{
+  padding: 6rem 0rem 0rem 0rem;
+  background-color: #111111;
+  margin: -1rem;
+}
+
+.tabsCategory{
+  display: flex;
+  justify-content: center;
+}
+
+.tab{
+  padding: 1rem;
+  width: 12rem;
+  color:white;
+  font-size: xx-large;
+  text-align: center;
+  background-color: #111111;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+  cursor: pointer;
+  border-style: none;
+}
+
+.tab:hover{
+  background:white;
+  color:#111111;
+  width: 12rem;
+}
+
+.eventContainer{
+  width: 80%;
+  margin: 2rem auto;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2rem 0rem ;
+}
+
+.active {
+  width: 14rem;
+  background: white;
+  color: #111111;
+}
+/***************************cart***************************/
+
+.cart{
+  position: relative;
+  width: 30%;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, .25);
+  border-radius: 0.5rem;
+}
+
+.cart__imgContainer{
+  width: 100%;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.cart__imgContainer__img{
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.cart__eventTitle{
+  margin: 20px 10px 0px;
+  font-size: 34px;
+}
+
+.cart__dateTime{
+  font-weight: bold;
+  font-size: 20px;
+  margin: 20px 10px 0px;
+  color: orangered;
+}
+
+.cart__info{
+  margin: 20px 10px 15px;
+  font-size: 16px;
+  color: darkgray;
+}
+
+.styleBtn{
+  padding: 0.5rem;
+  color: blue;
+  margin: 2rem 0rem 4rem 2rem;
+  font-size: 14px;
+  font-weight: bold;
+  border: 3px solid blue;
+  border-radius: 0.3rem;
+  width: 8rem;
+  cursor: pointer;
+}
+
+.likeBtn{
+  position: absolute;
+  top: 10rem;
+  right: 1rem;
+  border-radius: 50%;
+  height: 2.5rem;
+  border: none;
+  width: 2.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, .25);
+  background-color: white;
+}
+
+.originalPosition{
+  position: relative;
+  bottom: 8.3rem;
+  left: 10rem;
+}
+
+.originalPositionGoinBtn{
+  position: relative;
+  bottom: -8.3rem;
+  left: 10rem;
+}
+
+.bottomCont{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.homeBtn{
+  font-size: 28px;
+  padding: 0.5rem;
+  background-color: #111111;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.backBtn{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+/******************************************Calendar*************************************/
+
+.calendarContainer{
+  width: 95%;
+  margin: 0 auto;
+}
+
+.daysContainer {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  margin-top: 2rem;
+}
+
+.day {
+    height: 7rem;
+    background-color: #f2f2f2;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.day:hover {
+  background-color: #e2e2e2;
+}
+
+#prevButton,
+#nextButton {
+  padding: 5px 10px;
+  background-color: #ccc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+#prevButton:hover,
+#nextButton:hover {
+  background-color: #999;
+}
